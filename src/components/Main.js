@@ -60,7 +60,6 @@ const Main = () => {
 
 	return (
 		<Container>
-			{loading && <Loader />}
 			<Chart chartData={chartData} />
 			<ConverterContainer>
 				<div style={{ width: '200px' }}>
@@ -84,13 +83,12 @@ const Main = () => {
 						/>
 					</div>
 				</div>
-
 				<ArrowCircleRightIcon
 					style={{
 						width: '60px',
 						height: '60px',
 						color: '#7166d2',
-						margin: '0px 50px'
+						margin: '0px 50px 0px 40px'
 					}}
 				/>
 				<div style={{ width: '200px' }}>
@@ -116,6 +114,7 @@ const Container = styled.div`
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	// justify-content: space-evenly;
 `;
 const LoadingContainer = styled.div`
 	height: 100%;

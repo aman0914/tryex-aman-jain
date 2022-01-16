@@ -9,14 +9,14 @@ const CustomSelect = ({ type, options, value, onChange }) => {
 					<div
 						style={{
 							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'space-evenly'
+							alignItems: 'center'
 						}}
 					>
 						{props.data.icon({
 							width: '20px',
 							height: '20px',
-							color: '#ABA7D9'
+							color: '#ABA7D9',
+							marginRight: '10px'
 						})}
 						{props.children}
 					</div>
@@ -44,8 +44,7 @@ const CustomSelect = ({ type, options, value, onChange }) => {
 								{type}
 							</div>
 							<div style={{ font: '600 20px/30px Poppins', color: '#9896B0' }}>
-								{' '}
-								{selectedData.label}
+								{selectedData.value}
 							</div>
 						</div>
 					</div>
@@ -79,6 +78,7 @@ const customStyles = {
 	control: (provided, state) => ({
 		...provided,
 		border: 'none',
-		backgroundColor: 'none'
+		backgroundColor: 'none',
+		boxShadow: 'unset'
 	})
 };

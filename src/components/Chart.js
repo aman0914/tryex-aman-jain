@@ -25,6 +25,9 @@ const Chart = ({ chartData }) => {
 						}
 					},
 					axisX: {
+						labelFormatter: function () {
+							return ' ';
+						},
 						crosshair: {
 							enabled: true,
 							snapToDataPoint: true
@@ -85,8 +88,12 @@ export default Chart;
 
 const Container = styled.div`
 	margin: 40px;
+	margin-top: 20px;
 	canvas {
 		border-radius: 20px;
+	}
+	div:nth-child(2) {
+		height: 500px !important;
 	}
 `;
 

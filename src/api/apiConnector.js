@@ -7,6 +7,11 @@ import {
 import localforage from 'localforage';
 import { setupCache } from 'axios-cache-adapter';
 
+/* 
+Please add API KEY in .env.local for running server in development
+REACT_APP_API_KEY = <your_alphaantage_key>
+ */
+
 //Using Cache -- Alpha Vantage allows only 5 requests per minute and 500 in a day
 const cache = setupCache({
 	maxAge: 60 * 60 * 1000,

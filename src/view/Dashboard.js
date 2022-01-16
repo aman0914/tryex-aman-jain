@@ -12,7 +12,7 @@ const Dashboard = () => {
 				<Header />
 				<Main />
 				<FooterContainer>
-					<FooterBanner />
+					<FooterBanner style={{ width: 'auto', maxHeight: '300px' }} />
 				</FooterContainer>
 			</CenterContainer>
 		</Container>
@@ -24,6 +24,7 @@ export default Dashboard;
 const Container = styled.div`
 	display: flex;
 	background-color: #fafafe;
+	height: 100%;
 `;
 
 const CenterContainer = styled.div`
@@ -33,5 +34,9 @@ const CenterContainer = styled.div`
 `;
 
 const FooterContainer = styled.div`
+	display: none;
 	margin: 0 auto;
+	@media only screen and (min-width: 1320px) {
+		display: flex;
+	}
 `;

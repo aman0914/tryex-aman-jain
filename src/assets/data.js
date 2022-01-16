@@ -10,42 +10,42 @@ import {
 export const dropdownOptions = [
 	{
 		id: 'dollar',
-		label: 'USD',
+		label: 'United States Dollar',
 		value: 'USD',
 		icon: props => <CurrencyDollarIcon style={{ ...props }} />,
 		symbol: '$'
 	},
 	{
 		id: 'euro',
-		label: 'EUR',
+		label: 'Euro',
 		value: 'EUR',
 		icon: props => <CurrencyEuroIcon style={{ ...props }} />,
 		symbol: '€'
 	},
 	{
 		id: 'bangladeshi-taka',
-		label: 'BDT',
+		label: 'Bangladeshi Taka',
 		value: 'BDT',
 		icon: props => <CurrencyBangladeshiIcon style={{ ...props }} />,
 		symbol: '৳'
 	},
 	{
 		id: 'indian-rupee',
-		label: 'INR',
+		label: 'Indian Rupee',
 		value: 'INR',
 		icon: props => <CurrencyRupeeIcon style={{ ...props }} />,
 		symbol: '₹'
 	},
 	{
 		id: 'pound',
-		label: 'GBP',
+		label: 'British Pound Sterling',
 		value: 'GBP',
 		icon: props => <CurrencyPoundIcon style={{ ...props }} />,
 		symbol: '£'
 	},
 	{
 		id: 'yen',
-		label: 'JPY',
+		label: 'Japanese Yen',
 		value: 'JPY',
 		icon: props => <CurrencyYenIcon style={{ ...props }} />,
 		symbol: '¥'

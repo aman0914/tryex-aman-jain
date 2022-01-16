@@ -22,7 +22,6 @@ const NotFound = () => {
 export default NotFound;
 
 const Container = styled.div`
-	// background: #000;
 	display: flex;
 	width: 100%;
 `;

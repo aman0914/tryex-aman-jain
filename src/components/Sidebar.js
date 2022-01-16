@@ -53,9 +53,12 @@ const Sidebar = () => {
 export default Sidebar;
 
 const Container = styled.div`
-	height: 100vh;
-	width: 15rem;
+	display: none;
 	background-color: #fff;
+	@media only screen and (min-width: 1200px) {
+		width: 15rem;
+		display: unset;
+	}
 `;
 
 const Chip = styled.div`
